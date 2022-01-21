@@ -1,0 +1,15 @@
+name: Nimble test
+on: [push]
+
+jobs:
+  Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Installing Nim
+        run: sudo apt-get install nim
+
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Running the tests
+        run: nimble test
