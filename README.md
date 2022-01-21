@@ -1,4 +1,4 @@
-# RangeQueries
+# LRparser
 
 ![Documentation Generation](https://github.com/vanyle/lrparser/actions/workflows/github-documentation.yml/badge.svg)
 ![Tests](https://github.com/vanyle/lrparser/actions/workflows/github-tests.yml/badge.svg)
