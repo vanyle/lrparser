@@ -6,7 +6,7 @@ import unittest
 import lrparser
 import tables
 import strutils
-import langexample
+import vlang
 
 
 test "We are able to parse and interpret a toy language":

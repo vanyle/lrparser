@@ -5,11 +5,13 @@ jobs:
   Documentation:
     runs-on: ubuntu-latest
     steps:
-      - name: Installing Nim
-        run: sudo apt-get install nim
-
       - name: Check out repository code
         uses: actions/checkout@v2
+      
+      - name: Setup nim
+        uses: jiro4989/setup-nim-action@v1
+        with:
+          nim-version: '1.4.0'
 
       - name: Generate the documentation
         run: nim doc --project --index:on --outdir:docs src/lrparser.nim
